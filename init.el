@@ -46,7 +46,7 @@
   (concat user-emacs-directory "customizations/"))
 
 (defvar my-customizations
-  '())
+  '("ui"))
 
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))
