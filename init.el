@@ -41,3 +41,12 @@
   (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-envs
     '("PATH")))
+
+(defvar my-customizations-folder
+  (concat user-emacs-directory "customizations/"))
+
+(defvar my-customizations
+  '())
+
+(dolist (c my-customizations)
+  (load (concat my-customizations-folder c ".el")))
