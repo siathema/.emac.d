@@ -18,7 +18,11 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '())
+  '(ido-ubiquitous
+    smex
+    flycheck
+    projectile
+    company))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -46,7 +50,11 @@
   (concat user-emacs-directory "customizations/"))
 
 (defvar my-customizations
-  '("ui"))
+  '("ui"
+    "navigation"
+    "editing"
+    "miscellaneous"
+    "setup-company-mode"))
 
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))
