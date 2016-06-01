@@ -22,7 +22,10 @@
     smex
     flycheck
     projectile
-    company))
+    company
+    rust-mode
+    racer
+    flycheck-rust))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -54,7 +57,8 @@
     "navigation"
     "editing"
     "miscellaneous"
-    "setup-company-mode"))
+    "setup-company-mode"
+    "setup-rust"))
 
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))
