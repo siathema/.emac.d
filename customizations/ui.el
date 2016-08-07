@@ -5,7 +5,7 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
-(set-face-attribute 'default nil :height 14)
+(set-face-attribute 'default nil :height 100)
 (setq-default line-spacing 0.4)
 
 (blink-cursor-mode 0)
